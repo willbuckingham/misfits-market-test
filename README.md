@@ -16,9 +16,9 @@ In the project directory, you can run:
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm test`
+### `npm test` and `npm test:coverage`
 
-Launches the test runner in the interactive watch mode.<br />
+Launches the tests in watch mode or in coverage report mode.
 
 ### `npm run build`
 

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page renders 1`] = `
+<div>
+  <WithStyles(ForwardRef(AppBar))
+    position="static"
+  >
+    <WithStyles(ForwardRef(Toolbar))>
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-title-3"
+        variant="h6"
+      >
+        <img
+          alt="Misfits Market"
+          height="48"
+          src="https://cdn.shopify.com/s/files/1/0021/1750/1026/t/10/assets/misfits-market-header-logo.svg?v=16445708347985634275"
+          title="Misfits Market"
+        />
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(IconButton))
+        color="inherit"
+      >
+        <ShoppingCartIcon />
+      </WithStyles(ForwardRef(IconButton))>
+    </WithStyles(ForwardRef(Toolbar))>
+  </WithStyles(ForwardRef(AppBar))>
+  <main
+    className="makeStyles-main-4"
+  >
+    child
+  </main>
+</div>
+`;

@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.9.0",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "@svgr/webpack": "4.3.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -78,6 +80,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
+    "test:coverage": "npm test -- --coverage",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src"
   },
@@ -112,10 +115,35 @@
           "functions": "only-multiline"
         }
       ],
-      "spaced-comment": ["error", "always", {
-        "line": { "markers": ["*package", "!", "/", ",", "="] },
-        "block": { "balanced": true, "markers": ["*package", "!", ",", ":", "::", "flow-include"], "exceptions": ["*"] }
-      }]
+      "spaced-comment": [
+        "error",
+        "always",
+        {
+          "line": {
+            "markers": [
+              "*package",
+              "!",
+              "/",
+              ",",
+              "="
+            ]
+          },
+          "block": {
+            "balanced": true,
+            "markers": [
+              "*package",
+              "!",
+              ",",
+              ":",
+              "::",
+              "flow-include"
+            ],
+            "exceptions": [
+              "*"
+            ]
+          }
+        }
+      ]
     }
   },
   "browserslist": {

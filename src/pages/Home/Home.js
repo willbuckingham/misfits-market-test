@@ -1,17 +1,16 @@
 import React from 'react'
-import logo from './logo.svg'
-import './Home.css'
+// import logo from './logo.svg'
+// import './Home.css'
 
+import Page from '../../components/Page'
 
 export class Home extends React.Component {
   render () {
     return (
       <React.StrictMode>
-        <div className='App'>
-          <header className='App-header'>
-            <img src={logo} className='App-logo' alt='logo'/>
-          </header>
-        </div>
+        <Page>
+          Hello Home
+        </Page>
       </React.StrictMode>
     )
   }
