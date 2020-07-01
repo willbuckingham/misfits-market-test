@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app mounts 1`] = `
+<App>
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <BrowserRouter>
+      <Router
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+      >
+        <Switch>
+          <Route
+            computedMatch={
+              Object {
+                "isExact": true,
+                "params": Object {},
+                "path": "/",
+                "url": "/",
+              }
+            }
+            exact={true}
+            key="/"
+            location={
+              Object {
+                "hash": "",
+                "pathname": "/",
+                "search": "",
+                "state": undefined,
+              }
+            }
+            path="/"
+          >
+            <Home>
+              <div
+                className="App"
+              >
+                <header
+                  className="App-header"
+                >
+                  <img
+                    alt="logo"
+                    className="App-logo"
+                    src="logo.svg"
+                  />
+                </header>
+              </div>
+            </Home>
+          </Route>
+        </Switch>
+      </Router>
+    </BrowserRouter>
+  </Provider>
+</App>
+`;
+
+exports[`app shallows 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <BrowserRouter>
+    <Switch>
+      <Route
+        exact={true}
+        key="/"
+        path="/"
+      >
+        <Home />
+      </Route>
+      <Route
+        exact={false}
+        key="*"
+        path="*"
+      >
+        <NotFound />
+      </Route>
+    </Switch>
+  </BrowserRouter>
+</Provider>
+`;
