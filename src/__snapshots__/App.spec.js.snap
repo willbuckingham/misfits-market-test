@@ -110,14 +110,11 @@ exports[`app shallows 1`] = `
             "light": "rgb(191, 207, 142)",
             "main": "#B0C472",
           },
-          "secondar": Object {
-            "main": "#F1C34B",
-          },
           "secondary": Object {
-            "contrastText": "#fff",
-            "dark": "#c51162",
-            "light": "#ff4081",
-            "main": "#f50057",
+            "contrastText": "rgba(0, 0, 0, 0.87)",
+            "dark": "rgb(168, 136, 52)",
+            "light": "rgb(243, 207, 111)",
+            "main": "#F1C34B",
           },
           "success": Object {
             "contrastText": "rgba(0, 0, 0, 0.87)",

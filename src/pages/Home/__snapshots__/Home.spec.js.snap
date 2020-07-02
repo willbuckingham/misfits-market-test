@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders data 1`] = `
+<StrictMode>
+  <Page>
+    <WithStyles(ForwardRef(Grid))
+      container={true}
+      spacing={3}
+    >
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+        key="1"
+        lg={3}
+        md={3}
+        sm={4}
+        xl={2}
+        xs={12}
+      >
+        <Item
+          id={1}
+          msrp={1}
+          price={2}
+          product="Product"
+          soldOut={false}
+        />
+      </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(Grid))>
+  </Page>
+</StrictMode>
+`;
+
+exports[`Home renders loading 1`] = `
+<StrictMode>
+  <Page>
+    <img
+      alt="logo"
+      className="App-logo"
+      src="logo.svg"
+    />
+  </Page>
+</StrictMode>
+`;

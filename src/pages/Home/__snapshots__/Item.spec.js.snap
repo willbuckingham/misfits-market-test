@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item renders 1`] = `
+<WithStyles(ForwardRef(Card))
+  className="makeStyles-card-1"
+>
+  <WithStyles(ForwardRef(CardMedia))
+    alt="Product"
+    component="img"
+    height={125}
+    image="/logo192.png"
+    title="Product"
+  />
+  <WithStyles(ForwardRef(CardContent))
+    className="makeStyles-cardContent-2"
+  >
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-product-3"
+      variant="h6"
+    >
+      Product
+    </WithStyles(ForwardRef(Typography))>
+    <div
+      className="makeStyles-priceContainer-4"
+    >
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-price-5"
+        color="primary"
+        display="inline"
+      >
+        $2.00
+      </WithStyles(ForwardRef(Typography))>
+       
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-msrp-6"
+        color="textSecondary"
+        display="inline"
+        variant="caption"
+      >
+        $1.00
+      </WithStyles(ForwardRef(Typography))>
+       
+      <WithStyles(ForwardRef(Typography))
+        color="textSecondary"
+        display="inline"
+        variant="caption"
+      >
+        50% off MSRP
+      </WithStyles(ForwardRef(Typography))>
+    </div>
+  </WithStyles(ForwardRef(CardContent))>
+  <WithStyles(ForwardRef(CardActions))>
+    <WithStyles(ForwardRef(Fab))
+      color="secondary"
+      size="small"
+    >
+      <AddShoppingCartIcon />
+    </WithStyles(ForwardRef(Fab))>
+  </WithStyles(ForwardRef(CardActions))>
+</WithStyles(ForwardRef(Card))>
+`;
+
+exports[`Item renders sold out 1`] = `
+<WithStyles(ForwardRef(Card))
+  className="makeStyles-card-1"
+>
+  <WithStyles(ForwardRef(CardMedia))
+    alt="Product"
+    component="img"
+    height={125}
+    image="/logo192.png"
+    title="Product"
+  />
+  <WithStyles(ForwardRef(CardContent))
+    className="makeStyles-cardContent-2"
+  >
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-product-3"
+      variant="h6"
+    >
+      Product
+    </WithStyles(ForwardRef(Typography))>
+    <div
+      className="makeStyles-priceContainer-4"
+    >
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-price-5"
+        color="primary"
+        display="inline"
+      >
+        $2.00
+      </WithStyles(ForwardRef(Typography))>
+       
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-msrp-6"
+        color="textSecondary"
+        display="inline"
+        variant="caption"
+      >
+        $1.00
+      </WithStyles(ForwardRef(Typography))>
+       
+      <WithStyles(ForwardRef(Typography))
+        color="textSecondary"
+        display="inline"
+        variant="caption"
+      >
+        50% off MSRP
+      </WithStyles(ForwardRef(Typography))>
+    </div>
+  </WithStyles(ForwardRef(CardContent))>
+  <WithStyles(ForwardRef(CardActions))>
+    <WithStyles(ForwardRef(Typography))
+      color="error"
+    >
+      Sold Out!
+    </WithStyles(ForwardRef(Typography))>
+  </WithStyles(ForwardRef(CardActions))>
+</WithStyles(ForwardRef(Card))>
+`;

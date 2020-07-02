@@ -24,7 +24,7 @@ const useStyles = makeStyles(({ spacing }) => ({
     flexGrow: 1,
   },
   main: {
-    margin: spacing(2),
+    margin: spacing(3),
   },
 }))
 
