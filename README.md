@@ -1,5 +1,7 @@
 # misfits-market-app
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/92cfec53-5f31-4fc0-9658-b8b328e0bac1/deploy-status)](https://app.netlify.com/sites/misfits-market-test/deploys)
+
 Forked from my [react-boilerplate-app](<https://github.com/willbuckingham/react-boilerplate-app>) which is based on Create React App, to get started.
 
 Added:
