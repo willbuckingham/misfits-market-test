@@ -13,6 +13,7 @@ describe('Item', () => {
       price: 1,
       msrp: 2,
       soldOut: false,
+      onAdd: jest.fn(),
     }
   })
 

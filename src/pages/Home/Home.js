@@ -1,7 +1,9 @@
 import React from 'react'
 import {
   Grid,
+  Snackbar,
 } from '@material-ui/core'
+import Alert from '@material-ui/lab/Alert'
 
 import logo from './logo.svg'
 import './Home.css'
@@ -17,7 +19,8 @@ export class Home extends React.Component {
       msg: '',
       data: {},
     },
-    selection: [],
+    cart: [],
+    notificationOpen: false,
   }
 
   componentDidMount() {
@@ -35,24 +38,47 @@ export class Home extends React.Component {
       })
   }
 
+  handleAdd = (entry) => {
+    this.setState({
+      cart: [
+        ...this.state.cart,
+        entry,
+      ],
+      notificationOpen: true,
+    })
+  }
+
+  handleNotifcationClose = () => {
+    this.setState({
+      notificationOpen: false,
+    })
+  }
+
   render () {
-    const { market } = this.state
+    const { market, cart, notificationOpen } = this.state
+
+    const cartItems = cart.reduce((a,v) => a + parseInt(v.quantity), 0)
 
     return (
-      <React.StrictMode>
-        <Page>
+      <>
+        <Page cartItems={cartItems}>
           { !market.msg ?
             <img src={logo} className='App-logo' alt='logo'/> :
             <Grid container spacing={3}>
               { market?.data?.items?.map(v => 
                 <Grid item key={v.id} xl={2} lg={3} md={3} sm={4} xs={ 12 }>
-                  <Item { ...v } />
+                  <Item { ...v } onAdd={this.handleAdd} />
                 </Grid>
               ) }
             </Grid>
           }
+          <Snackbar open={notificationOpen} autoHideDuration={3000} onClose={this.handleNotifcationClose}>
+            <Alert variant='filled' elevation={6} onClose={this.handleNotifcationClose} severity='success'>
+              Item added to Cart!
+            </Alert>
+          </Snackbar>
         </Page>
-      </React.StrictMode>
+      </>
     )
   }
 }

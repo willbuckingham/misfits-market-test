@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import {
   // IconButton,
@@ -8,8 +8,8 @@ import {
   CardMedia,
   CardContent,
   CardActions,
-  // CardActionArea,
   Fab,
+  TextField,
 } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import { 
@@ -24,6 +24,9 @@ const useStyles = makeStyles(({ spacing }) => ({
   },
   cardContent: {
     flexGrow: 2,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
   },
   product: {
     lineHeight: 1.2,
@@ -40,6 +43,12 @@ const useStyles = makeStyles(({ spacing }) => ({
   msrp: {
     textDecoration: 'line-through',
   },
+  cardActions: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    height: spacing(6),
+    padding: spacing(2),
+  },
 }))
 
 export const formatCurrency = v =>
@@ -53,18 +62,28 @@ export const calcSavings = (msrp, price) => {
 const Item = props => {
   const classes = useStyles()
 
+  const [ quantity, setQuantity ] = useState(1)
+
   const { id, product, price, msrp, soldOut } = props
   const savings = calcSavings(msrp, price)
+
+  const onClickAdd = () => {
+    props.onAdd({
+      id,
+      quantity,
+    })
+    setQuantity(1)
+  }
 
   return (
     <Card className={classes.card}>
 
       <CardMedia
         component='img'
-        image='/logo192.png'
+        image='/logo512.png'
         title={product}
         alt={product}
-        height={125}
+        height={200}
       />
       <CardContent className={classes.cardContent}>
         <Typography
@@ -74,19 +93,28 @@ const Item = props => {
           {product}
         </Typography>
         <div className={classes.priceContainer}>
-          <Typography display='inline' color='primary' className={classes.price}>{formatCurrency(msrp)}</Typography>
+          <Typography display='inline' variant='body1' color='primary' className={classes.price}>{formatCurrency(price)}</Typography>
           &nbsp;
-          <Typography display='inline' variant='caption' className={classes.msrp} color='textSecondary'>{formatCurrency(price)}</Typography>
+          <Typography display='inline' variant='caption' color='textSecondary' className={classes.msrp} >{formatCurrency(msrp)}</Typography>
           &nbsp;
           { savings && <Typography display='inline' variant='caption' color='textSecondary'>{`${savings}% off MSRP`}</Typography> }
         </div>
       </CardContent>
-      <CardActions>
+      <CardActions className={classes.cardActions}>
         { soldOut ?
           <Typography color='error'>Sold Out!</Typography> :
-          <Fab color='secondary' size='small'>
-            <AddShoppingCart/>
-          </Fab>
+          <>
+            <TextField 
+              value={quantity}
+              onChange={ evt => setQuantity(evt.target.value) }
+              label='Quantity'
+              type='number'
+              inputProps={{ min: 1, max: 99 }}
+            />
+            <Fab color='secondary' size='small' onClick={onClickAdd}>
+              <AddShoppingCart/>
+            </Fab>
+          </>
         }
       </CardActions>
     </Card>

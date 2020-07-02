@@ -7,8 +7,8 @@ exports[`Item renders 1`] = `
   <WithStyles(ForwardRef(CardMedia))
     alt="Product"
     component="img"
-    height={125}
-    image="/logo192.png"
+    height={200}
+    image="/logo512.png"
     title="Product"
   />
   <WithStyles(ForwardRef(CardContent))
@@ -27,8 +27,9 @@ exports[`Item renders 1`] = `
         className="makeStyles-price-5"
         color="primary"
         display="inline"
+        variant="body1"
       >
-        $2.00
+        $1.00
       </WithStyles(ForwardRef(Typography))>
        
       <WithStyles(ForwardRef(Typography))
@@ -37,7 +38,7 @@ exports[`Item renders 1`] = `
         display="inline"
         variant="caption"
       >
-        $1.00
+        $2.00
       </WithStyles(ForwardRef(Typography))>
        
       <WithStyles(ForwardRef(Typography))
@@ -49,9 +50,24 @@ exports[`Item renders 1`] = `
       </WithStyles(ForwardRef(Typography))>
     </div>
   </WithStyles(ForwardRef(CardContent))>
-  <WithStyles(ForwardRef(CardActions))>
+  <WithStyles(ForwardRef(CardActions))
+    className="makeStyles-cardActions-7"
+  >
+    <WithStyles(ForwardRef(TextField))
+      inputProps={
+        Object {
+          "max": 99,
+          "min": 1,
+        }
+      }
+      label="Quantity"
+      onChange={[Function]}
+      type="number"
+      value={1}
+    />
     <WithStyles(ForwardRef(Fab))
       color="secondary"
+      onClick={[Function]}
       size="small"
     >
       <AddShoppingCartIcon />
@@ -67,8 +83,8 @@ exports[`Item renders sold out 1`] = `
   <WithStyles(ForwardRef(CardMedia))
     alt="Product"
     component="img"
-    height={125}
-    image="/logo192.png"
+    height={200}
+    image="/logo512.png"
     title="Product"
   />
   <WithStyles(ForwardRef(CardContent))
@@ -87,8 +103,9 @@ exports[`Item renders sold out 1`] = `
         className="makeStyles-price-5"
         color="primary"
         display="inline"
+        variant="body1"
       >
-        $2.00
+        $1.00
       </WithStyles(ForwardRef(Typography))>
        
       <WithStyles(ForwardRef(Typography))
@@ -97,7 +114,7 @@ exports[`Item renders sold out 1`] = `
         display="inline"
         variant="caption"
       >
-        $1.00
+        $2.00
       </WithStyles(ForwardRef(Typography))>
        
       <WithStyles(ForwardRef(Typography))
@@ -109,7 +126,9 @@ exports[`Item renders sold out 1`] = `
       </WithStyles(ForwardRef(Typography))>
     </div>
   </WithStyles(ForwardRef(CardContent))>
-  <WithStyles(ForwardRef(CardActions))>
+  <WithStyles(ForwardRef(CardActions))
+    className="makeStyles-cardActions-7"
+  >
     <WithStyles(ForwardRef(Typography))
       color="error"
     >

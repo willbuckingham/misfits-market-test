@@ -20,7 +20,11 @@ exports[`Page renders 1`] = `
       <WithStyles(ForwardRef(IconButton))
         color="inherit"
       >
-        <ShoppingCartIcon />
+        <WithStyles(ForwardRef(Badge))
+          color="secondary"
+        >
+          <ShoppingCartIcon />
+        </WithStyles(ForwardRef(Badge))>
       </WithStyles(ForwardRef(IconButton))>
     </WithStyles(ForwardRef(Toolbar))>
   </WithStyles(ForwardRef(AppBar))>

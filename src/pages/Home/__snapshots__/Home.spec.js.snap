@@ -1,8 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home renders data 1`] = `
-<StrictMode>
-  <Page>
+<Fragment>
+  <Page
+    cartItems={0}
+  >
     <WithStyles(ForwardRef(Grid))
       container={true}
       spacing={3}
@@ -19,24 +21,55 @@ exports[`Home renders data 1`] = `
         <Item
           id={1}
           msrp={1}
+          onAdd={[Function]}
           price={2}
           product="Product"
           soldOut={false}
         />
       </WithStyles(ForwardRef(Grid))>
     </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Snackbar))
+      autoHideDuration={3000}
+      onClose={[Function]}
+      open={false}
+    >
+      <WithStyles(ForwardRef(Alert))
+        elevation={6}
+        onClose={[Function]}
+        severity="success"
+        variant="filled"
+      >
+        Item added to Cart!
+      </WithStyles(ForwardRef(Alert))>
+    </WithStyles(ForwardRef(Snackbar))>
   </Page>
-</StrictMode>
+</Fragment>
 `;
 
 exports[`Home renders loading 1`] = `
-<StrictMode>
-  <Page>
+<Fragment>
+  <Page
+    cartItems={0}
+  >
     <img
       alt="logo"
       className="App-logo"
       src="logo.svg"
     />
+    <WithStyles(ForwardRef(Snackbar))
+      autoHideDuration={3000}
+      onClose={[Function]}
+      open={false}
+    >
+      <WithStyles(ForwardRef(Alert))
+        elevation={6}
+        onClose={[Function]}
+        severity="success"
+        variant="filled"
+      >
+        Item added to Cart!
+      </WithStyles(ForwardRef(Alert))>
+    </WithStyles(ForwardRef(Snackbar))>
   </Page>
-</StrictMode>
+</Fragment>
 `;

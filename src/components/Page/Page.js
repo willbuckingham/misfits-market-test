@@ -2,6 +2,7 @@ import React from 'react'
 import propTypes from 'prop-types'
 import {
   AppBar,
+  Badge,
   Toolbar,
   IconButton,
   Typography,
@@ -28,7 +29,7 @@ const useStyles = makeStyles(({ spacing }) => ({
   },
 }))
 
-const Page = ({ children }) => {
+const Page = ({ cartItems, children }) => {
   const classes = useStyles()
 
   return (
@@ -42,7 +43,9 @@ const Page = ({ children }) => {
             <img src='https://cdn.shopify.com/s/files/1/0021/1750/1026/t/10/assets/misfits-market-header-logo.svg?v=16445708347985634275' alt='Misfits Market' title='Misfits Market' height='48' />
           </Typography>
           <IconButton color='inherit'>
-            <ShoppingCart/>
+            <Badge badgeContent={cartItems} color='secondary'>
+              <ShoppingCart/>
+            </Badge>
           </IconButton>
         </Toolbar>
       </AppBar>
