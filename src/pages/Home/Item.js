@@ -22,6 +22,10 @@ const useStyles = makeStyles(({ spacing }) => ({
     display: 'flex',
     flexDirection: 'column',
   },
+  cardMedia:{
+    opacity: 0.25,
+    objectFit: 'contain',
+  },
   cardContent: {
     flexGrow: 2,
     display: 'flex',
@@ -80,10 +84,12 @@ const Item = props => {
 
       <CardMedia
         component='img'
-        image='/logo512.png'
+        // image='/logo512.png'
+        image='https://cdn.shopify.com/s/files/1/0021/1750/1026/t/10/assets/misfits-market-header-logo.svg?v=16445708347985634275'
         title={product}
         alt={product}
         height={200}
+        className={classes.cardMedia}
       />
       <CardContent className={classes.cardContent}>
         <Typography

@@ -6,25 +6,26 @@ exports[`Item renders 1`] = `
 >
   <WithStyles(ForwardRef(CardMedia))
     alt="Product"
+    className="makeStyles-cardMedia-2"
     component="img"
     height={200}
-    image="/logo512.png"
+    image="https://cdn.shopify.com/s/files/1/0021/1750/1026/t/10/assets/misfits-market-header-logo.svg?v=16445708347985634275"
     title="Product"
   />
   <WithStyles(ForwardRef(CardContent))
-    className="makeStyles-cardContent-2"
+    className="makeStyles-cardContent-3"
   >
     <WithStyles(ForwardRef(Typography))
-      className="makeStyles-product-3"
+      className="makeStyles-product-4"
       variant="h6"
     >
       Product
     </WithStyles(ForwardRef(Typography))>
     <div
-      className="makeStyles-priceContainer-4"
+      className="makeStyles-priceContainer-5"
     >
       <WithStyles(ForwardRef(Typography))
-        className="makeStyles-price-5"
+        className="makeStyles-price-6"
         color="primary"
         display="inline"
         variant="body1"
@@ -33,7 +34,7 @@ exports[`Item renders 1`] = `
       </WithStyles(ForwardRef(Typography))>
        
       <WithStyles(ForwardRef(Typography))
-        className="makeStyles-msrp-6"
+        className="makeStyles-msrp-7"
         color="textSecondary"
         display="inline"
         variant="caption"
@@ -51,7 +52,7 @@ exports[`Item renders 1`] = `
     </div>
   </WithStyles(ForwardRef(CardContent))>
   <WithStyles(ForwardRef(CardActions))
-    className="makeStyles-cardActions-7"
+    className="makeStyles-cardActions-8"
   >
     <WithStyles(ForwardRef(TextField))
       inputProps={
@@ -82,25 +83,26 @@ exports[`Item renders sold out 1`] = `
 >
   <WithStyles(ForwardRef(CardMedia))
     alt="Product"
+    className="makeStyles-cardMedia-2"
     component="img"
     height={200}
-    image="/logo512.png"
+    image="https://cdn.shopify.com/s/files/1/0021/1750/1026/t/10/assets/misfits-market-header-logo.svg?v=16445708347985634275"
     title="Product"
   />
   <WithStyles(ForwardRef(CardContent))
-    className="makeStyles-cardContent-2"
+    className="makeStyles-cardContent-3"
   >
     <WithStyles(ForwardRef(Typography))
-      className="makeStyles-product-3"
+      className="makeStyles-product-4"
       variant="h6"
     >
       Product
     </WithStyles(ForwardRef(Typography))>
     <div
-      className="makeStyles-priceContainer-4"
+      className="makeStyles-priceContainer-5"
     >
       <WithStyles(ForwardRef(Typography))
-        className="makeStyles-price-5"
+        className="makeStyles-price-6"
         color="primary"
         display="inline"
         variant="body1"
@@ -109,7 +111,7 @@ exports[`Item renders sold out 1`] = `
       </WithStyles(ForwardRef(Typography))>
        
       <WithStyles(ForwardRef(Typography))
-        className="makeStyles-msrp-6"
+        className="makeStyles-msrp-7"
         color="textSecondary"
         display="inline"
         variant="caption"
@@ -127,7 +129,7 @@ exports[`Item renders sold out 1`] = `
     </div>
   </WithStyles(ForwardRef(CardContent))>
   <WithStyles(ForwardRef(CardActions))
-    className="makeStyles-cardActions-7"
+    className="makeStyles-cardActions-8"
   >
     <WithStyles(ForwardRef(Typography))
       color="error"
