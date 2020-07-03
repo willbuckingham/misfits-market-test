@@ -1,4 +1,4 @@
-# misfits-market-app
+# misfits-market-test
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/92cfec53-5f31-4fc0-9658-b8b328e0bac1/deploy-status)](https://app.netlify.com/sites/misfits-market-test/deploys) [![Heroku](https://heroku-badge.herokuapp.com/?app=misfits-market-test)](<https://misfits-market-test.herokuapp.com/>)
 

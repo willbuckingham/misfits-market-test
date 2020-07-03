@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import {
-  // IconButton,
   Typography,
   // Button,
   Card,
@@ -23,8 +22,8 @@ const useStyles = makeStyles(({ spacing }) => ({
     flexDirection: 'column',
   },
   cardMedia:{
-    opacity: 0.25,
-    objectFit: 'contain',
+    // opacity: 0.25,
+    // objectFit: 'contain',
   },
   cardContent: {
     flexGrow: 2,
@@ -81,16 +80,15 @@ const Item = props => {
 
   return (
     <Card className={classes.card}>
-
       <CardMedia
         component='img'
-        // image='/logo512.png'
-        image='https://cdn.shopify.com/s/files/1/0021/1750/1026/t/10/assets/misfits-market-header-logo.svg?v=16445708347985634275'
+        image='/fruit.jpg' // Would use real image from JSON here
         title={product}
         alt={product}
         height={200}
         className={classes.cardMedia}
       />
+
       <CardContent className={classes.cardContent}>
         <Typography
           variant='h6'
@@ -101,11 +99,12 @@ const Item = props => {
         <div className={classes.priceContainer}>
           <Typography display='inline' variant='body1' color='primary' className={classes.price}>{formatCurrency(price)}</Typography>
           &nbsp;
-          <Typography display='inline' variant='caption' color='textSecondary' className={classes.msrp} >{formatCurrency(msrp)}</Typography>
+          <Typography display='inline' variant='body1' color='textSecondary' className={classes.msrp} >{formatCurrency(msrp)}</Typography>
           &nbsp;
           { savings && <Typography display='inline' variant='caption' color='textSecondary'>{`${savings}% off MSRP`}</Typography> }
         </div>
       </CardContent>
+
       <CardActions className={classes.cardActions}>
         { soldOut ?
           <Typography color='error'>Sold Out!</Typography> :
