@@ -27,12 +27,16 @@ Added:
 
 In the project directory, you can run:
 
+###`npm install`
+
+Install dependencies needed to run/build/test
+
 ### `npm start`
 
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm test` & `npm test:coverage`
+### `npm test` & `npm run test:coverage`
 
 Launches the tests in watch mode or in coverage report mode.
 
