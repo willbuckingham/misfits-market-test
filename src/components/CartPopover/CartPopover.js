@@ -21,7 +21,6 @@ const useStyles = makeStyles(({ spacing }) => ({
   },
   content: {
     padding: spacing(1),
-    width: 500,
     maxWidth: '100%',
   },
   empty: {

@@ -17,6 +17,7 @@ const useStyles = makeStyles(({ spacing }) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     flexGrow: 1,
+    maxWidth: 400,
   },
   price: {
     display: 'flex',
