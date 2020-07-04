@@ -27,7 +27,7 @@ Added:
 
 In the project directory, you can run:
 
-###`npm install`
+### `npm install`
 
 Install dependencies needed to run/build/test
 
