@@ -9,7 +9,7 @@ exports[`Item renders 1`] = `
     className="makeStyles-cardMedia-2"
     component="img"
     height={200}
-    image="https://cdn.shopify.com/s/files/1/0021/1750/1026/t/10/assets/misfits-market-header-logo.svg?v=16445708347985634275"
+    image="/fruit.jpg"
     title="Product"
   />
   <WithStyles(ForwardRef(CardContent))
@@ -37,7 +37,7 @@ exports[`Item renders 1`] = `
         className="makeStyles-msrp-7"
         color="textSecondary"
         display="inline"
-        variant="caption"
+        variant="body1"
       >
         $2.00
       </WithStyles(ForwardRef(Typography))>
@@ -86,7 +86,7 @@ exports[`Item renders sold out 1`] = `
     className="makeStyles-cardMedia-2"
     component="img"
     height={200}
-    image="https://cdn.shopify.com/s/files/1/0021/1750/1026/t/10/assets/misfits-market-header-logo.svg?v=16445708347985634275"
+    image="/fruit.jpg"
     title="Product"
   />
   <WithStyles(ForwardRef(CardContent))
@@ -114,7 +114,7 @@ exports[`Item renders sold out 1`] = `
         className="makeStyles-msrp-7"
         color="textSecondary"
         display="inline"
-        variant="caption"
+        variant="body1"
       >
         $2.00
       </WithStyles(ForwardRef(Typography))>

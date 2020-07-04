@@ -3,7 +3,7 @@
 exports[`Home renders data 1`] = `
 <Fragment>
   <Page
-    cartItems={0}
+    cartItems={Array []}
   >
     <WithStyles(ForwardRef(Grid))
       container={true}
@@ -48,9 +48,7 @@ exports[`Home renders data 1`] = `
 
 exports[`Home renders loading 1`] = `
 <Fragment>
-  <Page
-    cartItems={0}
-  >
+  <Page>
     <img
       alt="logo"
       className="App-logo"

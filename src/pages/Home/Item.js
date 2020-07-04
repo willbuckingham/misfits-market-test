@@ -15,6 +15,8 @@ import {
   AddShoppingCart,
 } from '@material-ui/icons'
 
+import { formatCurrency } from './../../utils'
+
 const useStyles = makeStyles(({ spacing }) => ({
   card: {
     height: '100%',
@@ -22,8 +24,7 @@ const useStyles = makeStyles(({ spacing }) => ({
     flexDirection: 'column',
   },
   cardMedia:{
-    // opacity: 0.25,
-    // objectFit: 'contain',
+    
   },
   cardContent: {
     flexGrow: 2,
@@ -32,7 +33,7 @@ const useStyles = makeStyles(({ spacing }) => ({
     justifyContent: 'space-between',
   },
   product: {
-    lineHeight: 1.2,
+    
   },
   priceContainer: {
     display: 'flex',
@@ -54,9 +55,6 @@ const useStyles = makeStyles(({ spacing }) => ({
   },
 }))
 
-export const formatCurrency = v =>
-  '$' + v.toFixed(2)
-
 export const calcSavings = (msrp, price) => {
   const savingsExact = price < msrp ? (1 - price / msrp) * 100 : 0
   return Math.round(savingsExact / 5) * 5
@@ -73,7 +71,7 @@ const Item = props => {
   const onClickAdd = () => {
     props.onAdd({
       id,
-      quantity,
+      quantity: parseInt(quantity),
     })
     setQuantity(1)
   }

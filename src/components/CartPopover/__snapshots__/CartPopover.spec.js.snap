@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartPopover renders empty 1`] = `
+<Fragment>
+  <WithStyles(ForwardRef(IconButton))
+    color="inherit"
+    onClick={[Function]}
+  >
+    <WithStyles(ForwardRef(Badge))
+      badgeContent={0}
+      color="secondary"
+    >
+      <ShoppingCartIcon />
+    </WithStyles(ForwardRef(Badge))>
+  </WithStyles(ForwardRef(IconButton))>
+  <WithStyles(ForwardRef(Popover))
+    anchorEl={null}
+    anchorOrigin={
+      Object {
+        "horizontal": "left",
+        "vertical": "bottom",
+      }
+    }
+    onClose={[Function]}
+    open={false}
+    transformOrigin={
+      Object {
+        "horizontal": "right",
+        "vertical": "top",
+      }
+    }
+  >
+    <div
+      className="makeStyles-content-2"
+    >
+      <WithStyles(ForwardRef(Typography))
+        variant="h6"
+      >
+        Items (
+        0
+        )
+      </WithStyles(ForwardRef(Typography))>
+      <hr />
+      <WithStyles(ForwardRef(Typography))
+        align="center"
+        className="makeStyles-empty-3"
+        variant="body1"
+      >
+        Cart Empty!
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Button))
+        color="primary"
+        disabled={true}
+        fullWidth={true}
+        onClick={[Function]}
+        variant="contained"
+      >
+        <WithStyles(ForwardRef(Typography))>
+          Checkout 
+        </WithStyles(ForwardRef(Typography))>
+      </WithStyles(ForwardRef(Button))>
+    </div>
+  </WithStyles(ForwardRef(Popover))>
+</Fragment>
+`;
+
+exports[`CartPopover renders w/ item 1`] = `
+<Fragment>
+  <WithStyles(ForwardRef(IconButton))
+    color="inherit"
+    onClick={[Function]}
+  >
+    <WithStyles(ForwardRef(Badge))
+      badgeContent={2}
+      color="secondary"
+    >
+      <ShoppingCartIcon />
+    </WithStyles(ForwardRef(Badge))>
+  </WithStyles(ForwardRef(IconButton))>
+  <WithStyles(ForwardRef(Popover))
+    anchorEl={null}
+    anchorOrigin={
+      Object {
+        "horizontal": "left",
+        "vertical": "bottom",
+      }
+    }
+    onClose={[Function]}
+    open={false}
+    transformOrigin={
+      Object {
+        "horizontal": "right",
+        "vertical": "top",
+      }
+    }
+  >
+    <div
+      className="makeStyles-content-2"
+    >
+      <WithStyles(ForwardRef(Typography))
+        variant="h6"
+      >
+        Items (
+        2
+        )
+      </WithStyles(ForwardRef(Typography))>
+      <hr />
+      <Item
+        id={1}
+        key="1"
+        price={1}
+        product="p"
+        quantity={2}
+      />
+      <WithStyles(ForwardRef(Button))
+        color="primary"
+        disabled={false}
+        fullWidth={true}
+        onClick={[Function]}
+        variant="contained"
+      >
+        <WithStyles(ForwardRef(Typography))>
+          Checkout 
+          $2.00
+        </WithStyles(ForwardRef(Typography))>
+      </WithStyles(ForwardRef(Button))>
+    </div>
+  </WithStyles(ForwardRef(Popover))>
+</Fragment>
+`;

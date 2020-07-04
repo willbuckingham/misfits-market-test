@@ -39,11 +39,12 @@ export class Home extends React.Component {
   }
 
   handleAdd = (entry) => {
+    const existingEntry = this.state.cart.find(v => v.id === entry.id)
+
     this.setState({
-      cart: [
-        ...this.state.cart,
-        entry,
-      ],
+      cart: existingEntry ?
+        this.state.cart.map(v => v.id === entry.id ? { ...v, quantity: v.quantity + entry.quantity } : v) :
+        this.state.cart.concat(entry),
       notificationOpen: true,
     })
   }
@@ -56,8 +57,15 @@ export class Home extends React.Component {
 
   render () {
     const { market, cart, notificationOpen } = this.state
+    
+    const cartItems = market?.data?.items?.map(v => {
+      const quantity = cart.find(c => v.id === c.id)?.quantity || 0
 
-    const cartItems = cart.reduce((a,v) => a + parseInt(v.quantity), 0)
+      return {
+        ...v,
+        quantity,
+      }
+    }).filter((v => v.quantity))
 
     return (
       <>

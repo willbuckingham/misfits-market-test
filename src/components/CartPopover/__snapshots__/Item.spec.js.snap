@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item renders 1`] = `
+<Fragment>
+  <div
+    className="makeStyles-root-1"
+  >
+    <img
+      alt="Product"
+      height={80}
+      src="/fruit.jpg"
+      title="Product"
+    />
+    <div
+      className="makeStyles-textarea-2"
+    >
+      <WithStyles(ForwardRef(Typography))>
+        Product
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Typography))
+        color="textSecondary"
+      >
+        $1.00
+         x 
+        2
+      </WithStyles(ForwardRef(Typography))>
+    </div>
+    <div
+      className="makeStyles-price-3"
+    >
+      <WithStyles(ForwardRef(Typography))
+        variant="h6"
+      >
+        $2.00
+      </WithStyles(ForwardRef(Typography))>
+    </div>
+  </div>
+  <hr />
+</Fragment>
+`;

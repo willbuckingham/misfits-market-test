@@ -30,6 +30,6 @@ describe('Home', () => {
   })
 
   xit('componentDidMount', () => {
-    
+
   })
 })

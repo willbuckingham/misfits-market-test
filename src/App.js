@@ -21,6 +21,14 @@ const theme = createMuiTheme({
       main: '#F1C34B',
     },
   },
+  typography: {
+    body1: {
+      lineHeight: 1.2,
+    },
+    h6: {
+      lineHeight: 1.2,
+    },
+  },
 })
 
 export class App extends React.Component {
